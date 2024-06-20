@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* font normal */
+      @font-face {
+        font-family: "Figtree";
+        src: url(./assets//fonts/Figtree-VariableFont_wght.ttf)
+            format("truetype"),
+          url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* font semibold */
+      @font-face {
+        font-family: "Figtree";
+        src: url(./assets//fonts/static/Figtree-SemiBold.ttf) format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      /* font extrabold */
+      @font-face {
+        font-family: "Figtree";
+        src: url(./assets//fonts/static/Figtree-ExtraBold.ttf)
+          format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: hsl(47, 88%, 63%);
+        font-family: "Figtree";
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        max-width: 360px;
+        padding: 24px;
+        border-radius: 15px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        box-shadow: 10px 10px 1px black;
+      }
+
+      .card img {
+        border-radius: 10px;
+      }
+
+      .card-content span:first-of-type {
+        background-color: hsl(47, 88%, 63%);
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-weight: 800;
+      }
+      .card-content a {
+        font-weight: 800;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .card-content a:hover {
+        color: hsl(47, 88%, 63%);
+        font-weight: 600;
+      }
+
+      .card-content .card-information {
+        line-height: 25px;
+        margin-top: 12px;
+        color: hsl(0, 0%, 50%);
+        font-size: 16px;
+      }
+
+      .avatar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./assets/images/illustration-article.svg" alt="article svg" />
+        <div class="card-content">
+          <span>Learning</span>
+          <p>Published 21 Dec 2023</p>
+          <a href="">HTML & CSS foundations</a>
+          <div class="card-information">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </div>
+        </div>
+        <div class="card-author">
+          <div class="avatar">
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt="author course"
+              width="32px"
+            />
+            <span> Greg Hooper</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
